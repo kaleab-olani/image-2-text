@@ -15,7 +15,7 @@ def subs(pixel):
     return getChar(avg)
 
 def getChar(color):
-    chars = 'mndbso*._'
+    chars = '.\',:`-";_~|/=\\^*+!<>()?vcI{}rJeimowFLTV[]7jnszC1ltxWXY&3afuMPS%24yEGOZ#AK569bhkBDNQU@8pR0dgqH$'
     index = round(color/(256/len(chars)))
     if index >= len(chars): index = len(chars)-1
     return chars[index]
